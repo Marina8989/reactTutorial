@@ -1,14 +1,13 @@
 import React from 'react';
+import MyInfo from './MyInfo'
+
 
 function App() {
   return (
        <div>
-        <h2>Places to visit:</h2>
-        <ul>
-          <li>Japan</li>
-          <li>Italy</li>
-          <li>Iceland</li>
-        </ul>
+          <MyInfo contact={{name: 'Marina', age: 31, job: 'Front-end-developer'}}/>
+          <MyInfo contact={{name: 'Arina', age: 33, job: 'Business woman'}}/>
+          <MyInfo contact={{name: 'Lucia', age: 18, job: 'Student'}}/>
        </div>
   );
 }
