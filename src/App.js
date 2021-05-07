@@ -1,13 +1,14 @@
 import React from 'react';
-import MyInfo from './MyInfo'
+import Product from './Product'
+import products from './vProducts'
 
 
 function App() {
+    const productItems = products.map(item => <Product key={item.id} name={item.name} price={item.price} description={item.description}/>)
+
   return (
        <div>
-          <MyInfo contact={{name: 'Marina', age: 31, job: 'Front-end-developer'}}/>
-          <MyInfo contact={{name: 'Arina', age: 33, job: 'Business woman'}}/>
-          <MyInfo contact={{name: 'Lucia', age: 18, job: 'Student'}}/>
+           { productItems }
        </div>
   );
 }
