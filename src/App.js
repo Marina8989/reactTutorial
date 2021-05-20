@@ -1,9 +1,10 @@
 import React from 'react';
+import Box from './Box'
 
 function App() {
     return (
         <div>
-            <h1>This is located in App file.</h1>
+            <Box />
         </div>
     )
 }
